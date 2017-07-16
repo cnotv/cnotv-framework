@@ -1,0 +1,8 @@
+.cnotv__contact {
+	&__message {
+		padding: 3em 2em;
+		margin-bottom: 3em;
+		background-color: $link-bg-color;
+		box-shadow: 0 5px 15px 5px rgba($body-color,0.3);
+	}
+}
