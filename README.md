@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/cnotv/cnotv-framework.svg?branch=master)](https://travis-ci.org/cnotv/cnotv-framework)
+
 # cnotv-framework
 
 > Framework for all the cnotv projects

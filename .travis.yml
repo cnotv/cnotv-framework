@@ -1,0 +1,25 @@
+# .travis.yml
+dist: trusty
+sudo: required
+language: node_js
+
+node_js:
+  - "7"
+
+cache:
+  directories:
+    - "node_modules"
+
+install:
+ - wget https://github.com/cnotv/cnotv-framework/
+ - npm install
+
+script:
+ - npm run build --report
+
+deploy:
+  - provider: script
+    script: ./deploy.sh
+    skip_cleanup: true
+    on:
+      branch: master
