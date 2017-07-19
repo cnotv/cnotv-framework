@@ -11,9 +11,9 @@ export default {
   name: 'hello',
   data() {
     return {
-      msg: 'Styleguide and framework for cnotv.',
-      msg2: 'Built with Vue, SCSS and KSS.',
-      msg3: 'Soon online with built automation using Travis.)',
+      msg: 'Styleguide and framework for cnotv',
+      msg2: 'Built with Vue, SCSS and KSS',
+      msg3: '(Soon online with built automation using Travis)',
     };
   },
 };
