@@ -15,7 +15,7 @@ install:
  - npm install
 
 script:
- - npm run build --report
+ - npm run build
 
 deploy:
   - provider: script
