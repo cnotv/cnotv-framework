@@ -18,4 +18,4 @@ script:
  - npm run build
 
 after_success:
-  "curl -T ./home/travis/build/cnotv/cnotv-framework -u  $FTP_USER:$FTP_PASSWORD $FTP_HOST"
+  "curl -T  index.html  -u  $FTP_USER:$FTP_PASSWORD $FTP_HOST"
