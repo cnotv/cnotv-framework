@@ -17,9 +17,5 @@ install:
 script:
  - npm run build
 
-deploy:
-  provider: script
-  skip_cleanup: true
-  script: deploy.sh
-  on:
-    branch: develop
+after_success:
+  script: "echo bananas"
