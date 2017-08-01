@@ -10,8 +10,8 @@ img {
 
 pre {
 	font-size: 12px;
-	border-top: 1em solid $link-active-color;
-	border-bottom: 1em solid $link-active-color;
+	border-top: 1em solid $bg-link-hover;
+	border-bottom: 1em solid $bg-link-hover;
 	color: #000;
 	max-width: 100%;
 	overflow: auto;
@@ -35,19 +35,18 @@ p>a {
 }
 
 .gallery {
-	margin-right: -$website-padding/2;
-	margin-left: -$website-padding/2;
-	margin-top: $website-padding/2;
-	margin-bottom: $website-padding/2;
+	margin-right: -$grid-gutter-size;
+	margin-left: -$grid-gutter-size;
+	margin-top: $grid-gutter-size;
+	margin-bottom: $grid-gutter-size;
 	&-item {
 		display: inline-block;
-		margin: $website-padding/2;
+		margin: $grid-gutter-size;
 	}
 	&-icon {
 		display: inline-block;
 	}
 }
-
 
 .search-field {
 	outline: none;
@@ -55,91 +54,5 @@ p>a {
 	&, &:focus {
 		background-color: transparent;
 		border: none;
-	}
-}
-
-.has-menu_open,
-.modal-open {
-	overflow: hidden;
-}
-
-.cnotv {
-	// GLOBAL
-	&__main {
-		@include media-bp(tablet-min) {
-			padding-top: $website-padding;
-			padding-bottom: $website-padding;
-		}
-		@include media-bp(mobile) {
-			padding-top: $website-padding/2;
-			padding-bottom: $website-padding/2;
-		}
-
-		@include menu_open {
-			filter: blur(10px);
-			opacity: .5;
-		}
-	}
-
-	&__container {
-		clear: both;
-		margin: 0 auto;
-		@include media-bp(tablet-min) {
-			padding-left: $website-padding;
-			padding-right: $website-padding;
-			max-width: $website-width;
-		}
-		@include media-bp(mobile) {
-			padding-left: $website-padding/2;
-			padding-right: $website-padding/2;
-		}
-	}
-
-	&__section {
-		width: 100%;
-	}
-
-	&__divider {
-		border-top: $website-border;
-	}
-
-	&__more {
-		i {
-			vertical-align: middle;
-			&:after {
-				content: $fa-var-plus;
-				font-size: 1rem;
-				width: 1rem;
-				height: 1rem;
-				text-align: center;
-				transition: transform 0.2s;
-				display: table-cell;
-				line-height: 1em;
-			}
-		}
-		&:hover,
-		&:focus {
-			i:after {
-				text-decoration: none;
-				transform: rotate(90deg);
-			}
-		}
-	}
-
-	&__loader {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		font-size: 3em;
-		@include loader;
-	}
-}
-
-.hidden {
-	display: none;
-}
-.hidden-tablet-min {
-	@include media-bp(tablet-min) {
-		display: none;
 	}
 }

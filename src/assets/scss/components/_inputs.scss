@@ -26,7 +26,7 @@
 		
 		option {
 			padding: $menu-padding/4 $menu-padding/2;
-			background-color: $link-active-color;
+			background-color: $bg-link-hover;
 			border: none;
 			// box-shadow: 0 5px 15px 5px rgba($body-color,0.3);
 			&:hover {

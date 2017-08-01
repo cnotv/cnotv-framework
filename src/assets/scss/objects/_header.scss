@@ -1,6 +1,6 @@
 .cnotv {	
 	&__logo {
-		margin: $website-padding auto $website-padding*1.5;
+		margin: $grid-gutter-size auto $grid-gutter-size*1.5;
 		display: block;
 		max-height: 60px;
 		width: auto;
@@ -79,7 +79,7 @@
 			&:focus {
 				text-decoration: none;
 				@include media-bp(desktop) {
-					background-color: $link-bg-color;
+					background-color: $bg-link;
 				}
 			}
 			@include media-bp(desktop) {
@@ -176,7 +176,7 @@
 		&__results {
 			position: absolute;
 			width: 100%;
-			background-color: $link-active-color;
+			background-color: $bg-link-hover;
 			top: 100%;
 			left: 0;
 			box-shadow: 0 5px 15px 5px rgba($body-color,0.3);

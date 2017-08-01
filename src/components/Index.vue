@@ -1,8 +1,12 @@
 <template>
-  <div class="cnotv__section">
-    <h1>{{ msg }}</h1>
-    <h3>{{ msg2 }}</h3>
-    <p>{{ msg3 }}</p>
+  <section class="c-section">
+    <div class="c-container">
+      <h1>Styleguide and framework for cnotv</h1>
+      <h3>Built with Vue, SCSS and KSS</h3>
+      <p>(Soon online with built automation using Travis)</p>
+    </div>
+  </section>
+
   </div>
 </template>
 
@@ -11,9 +15,6 @@ export default {
   name: 'hello',
   data() {
     return {
-      msg: 'Styleguide and framework for cnotv',
-      msg2: 'Built with Vue, SCSS and KSS',
-      msg3: '(Soon online with built automation using Travis)',
     };
   },
 };

@@ -1,25 +1,33 @@
+// Common
 @import "common/variables";
 @import "common/bootstrap_vars";
 @import "common/mixins";
-
-// Import npm dependencies
-@import "font-awesome/scss/font-awesome";
-
 @import "common/normalize";
 @import "common/reset";
+@import "font-awesome/scss/font-awesome";
 @import "common/type";
 @import "common/global";
-@import "components/grid";
-@import "components/inputs";
-@import "components/animations";
-// @import "components/buttons";
-@import "components/modal";
 
-@import "layouts/header";
-// @import "layouts/sidebar";
-@import "layouts/footer";
-@import "layouts/pages";
-@import "layouts/portfolio";
-@import "layouts/contact";
-// @import "layouts/posts";
-// @import "layouts/tinymce";
+
+// Components
+@import "components/layout";
+@import "components/inputs";
+@import "components/buttons";
+@import "components/animations";
+
+
+// Objects
+@import "objects/modal";
+@import "objects/nav";
+@import "objects/header";
+@import "objects/sidebar";
+@import "objects/footer";
+
+
+// Pages
+@import "pages/pages";
+@import "pages/portfolio";
+@import "pages/contact";
+@import "pages/posts";
+@import "pages/tinymce";
+

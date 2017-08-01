@@ -6,7 +6,7 @@
 			justify-content: space-between;
 		}
 		&__nav {
-			padding-bottom: $website-padding;
+			padding-bottom: $grid-gutter-size;
 			&__link {
 				@include link_style;
 				@include media-bp(tablet-min) {
@@ -22,10 +22,10 @@
 	// HOME
 	&__hero {
 		@include media-bp(tablet-min) {
-			padding-bottom: $website-padding;
+			padding-bottom: $grid-gutter-size;
 		}
 		@include media-bp(mobile) {
-			padding-bottom: $website-padding/2;
+			padding-bottom: $grid-gutter-size/2;
 		}
 	}
 }

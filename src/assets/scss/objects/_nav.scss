@@ -1,0 +1,128 @@
+.c-nav {
+  $border-size: 4px;
+
+  &-tree {
+
+    ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    & > ul {
+      padding-left: 1em;
+    }
+
+    li  {
+      span, a {
+        display: inline-block;
+        vertical-align: top;
+      }
+      span {
+        cursor: pointer;
+        &:after {
+          content: '-';
+          border: 1px solid;
+          padding: 0 .35em;
+          margin-left: .35em;
+        }
+      }
+      &:before {
+        font-family: monospace;
+        font-size: 2.5em;
+        font-weight: 300;
+        line-height: .8;
+        letter-spacing: -1px;
+      }
+    }
+
+    & > ul > li {
+      &:not(:last-child) {
+        &:before {
+          content: '├─ ';
+        }
+
+        li {
+          &:not(:last-child) {
+            &:before {
+              content: "│\00a0\00a0├─ ";
+            }
+            li {
+              &:not(:last-child) {
+                &:before {
+                  content: "│\00a0\00a0│\00a0\00a0├─ ";
+                }
+              }
+              &:last-child {
+                &:before {
+                  content: "│\00a0\00a0│\00a0\00a0└─ ";
+                }
+              }
+            }
+          }
+          &:last-child {
+            &:before {
+              content: "│\00a0\00a0└─ ";
+            }
+            li {
+              &:not(:last-child) {
+                &:before {
+                  content: "\00a0\00a0\00a0│\00a0\00a0├─ ";
+                }
+              }
+              &:last-child {
+                &:before {
+                  content: "\00a0\00a0\00a0│\00a0\00a0└─ ";
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &:last-child {
+        &:before {
+          content: '└─ ';
+        }
+
+        & > ul > li {
+
+          &:not(:last-child) {
+            &:before {
+              content: "\00a0\00a0\00a0├─ ";
+            }
+            & > ul > li {
+              &:not(:last-child) {
+                &:before {
+                  content: "\00a0\00a0\00a0│\00a0\00a0├─ ";
+                }
+                & > ul > li {
+                  &:not(:last-child) {
+                    &:before {
+                      content: "\00a0\00a0\00a0│\00a0\00a0├─ ";
+                    }
+                  }
+                  &:last-child {
+                    &:before {
+                      content: "\00a0\00a0\00a0│\00a0\00a0└─ ";
+                    }
+                  }
+                }
+              }
+              &:last-child {
+                &:before {
+                  content: "\00a0\00a0\00a0│\00a0\00a0└─ ";
+                }
+              }
+            }
+          }
+          &:last-child {
+            &:before {
+              content: "\00a0\00a0\00a0└─ ";
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
