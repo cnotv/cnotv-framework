@@ -17,5 +17,9 @@ install:
 script:
  - npm run build
 
-after_success:
-  "curl -T  index.html  -u  $FTP_USER:$FTP_PASSWORD $FTP_HOST"
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: deploy.sh
+  on:
+    branch: develop
