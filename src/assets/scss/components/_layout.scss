@@ -39,6 +39,9 @@
     justify-content: flex-end;
   }
 
+  &--edge {
+    @include grid-row($padding: false);
+  }
   &--padding {
     &-1 {
       &+& {
