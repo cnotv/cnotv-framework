@@ -1,0 +1,58 @@
+body {
+	letter-spacing: $letter-spacing-base;
+}
+
+img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+pre {
+	font-size: 12px;
+	border-top: 1em solid $bg-link-hover;
+	border-bottom: 1em solid $bg-link-hover;
+	color: #000;
+	max-width: 100%;
+	overflow: auto;
+	white-space: pre-wrap;
+	@include media-bp(desktop) {
+		padding: 1em 2em 2em;
+	}
+	@include media-bp(mobile) {
+		padding-bottom: 2em;
+	}
+}
+
+a:focus,
+button:focus	{
+	outline: none;
+}
+
+.post a,
+p>a {
+	@include link_style;
+}
+
+.gallery {
+	margin-right: -$grid-gutter-size;
+	margin-left: -$grid-gutter-size;
+	margin-top: $grid-gutter-size;
+	margin-bottom: $grid-gutter-size;
+	&-item {
+		display: inline-block;
+		margin: $grid-gutter-size;
+	}
+	&-icon {
+		display: inline-block;
+	}
+}
+
+.search-field {
+	outline: none;
+
+	&, &:focus {
+		background-color: transparent;
+		border: none;
+	}
+}
