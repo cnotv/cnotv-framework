@@ -26,9 +26,9 @@
   @include grid-col(1/4);
   background-color: $bg-link;
   overflow-y: scroll;
-  height: 100vh;
 
   @include media-bp(desktop) {
+    height: 100vh;
   }
 }
 
