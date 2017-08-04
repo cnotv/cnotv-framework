@@ -19,12 +19,16 @@
 
 .c-main {
   @include grid-col(3/4);
+  overflow-y: scroll;
+  height: 100vh;
 }
 .c-sidebar {
   @include grid-col(1/4);
   background-color: $bg-link;
+  overflow-y: scroll;
+  height: 100vh;
+
   @include media-bp(desktop) {
-    min-height: 100vh;
   }
 }
 
