@@ -1,7 +1,7 @@
 {
   "name": "cnotv-framework",
   "version": "1.0.0",
-  "description": "Framework for all the cnotv projects",
+  "description": "Framework for all the cnotv projects http://framework.cnotv.xyz/",
   "author": "cnotv <contact@cnotv.xyz>",
   "private": true,
   "scripts": {
