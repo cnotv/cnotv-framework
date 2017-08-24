@@ -3,7 +3,12 @@
     <div class="c-container">
       <h1>Styleguide and framework for cnotv</h1>
       <h3>Built with Vue.js and SCSS</h3>
+
       <a href="https://travis-ci.org/cnotv/cnotv-framework/"><img src="https://travis-ci.org/cnotv/cnotv-framework.svg?branch=master" alt="Framework built status"></a>
+      <a href="https://codecov.io/gh/cnotv/cnotv-framework">
+        <img src="https://codecov.io/gh/cnotv/cnotv-framework/branch/master/graph/badge.svg" alt="Codecov" />
+      </a>
+      
       <p>This styleguide is an SPA generated using the Vue.js client (vue-cli) webpack template. Deploy automated through <a href="https://github.com/cnotv/cnotv-framework/">Git</a> and <a href="https://travis-ci.org/cnotv/cnotv-framework/">Travis CI</a>  via shared hosting Namecheap.</p>
       <p>The purpose of this project is to collect in one place all the components required for all my applications. This will help to have a separation of concernes, stay DRY, integrate frontend tests, plus to assure it will be modular, extendible and flexible. It also will allow to demonstrate an actual setup for such case.</p>
       <p>The first project where I'm going to use this framework will be my <a href="https://cnotv.xyz/">personal website</a>, built with Wordpress and distributed in analogue way. Check the <a href="https://cnotv.xyz/download">download</a> page for the actual status.</p>

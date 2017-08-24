@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/cnotv/cnotv-framework.svg?branch=master)](https://travis-ci.org/cnotv/cnotv-framework)
+[![codecov](https://codecov.io/gh/cnotv/cnotv-framework/branch/master/graph/badge.svg)](https://codecov.io/gh/cnotv/cnotv-framework)
 
 # cnotv-framework
 
