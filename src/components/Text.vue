@@ -1,7 +1,7 @@
 <template>
   <section class="c-section">
     <div class="c-container">
-      <h2>Text</h2>
+      <h1>Text</h1>
 
       <h1>h1 heading tag</h1>
       <h2>h2 heading tag</h2>

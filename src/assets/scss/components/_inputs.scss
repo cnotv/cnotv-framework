@@ -5,6 +5,7 @@
   border-bottom: $website-border;
   width: 100%;
   appearance: none;
+  margin-bottom: 1em;
 
   &:focus {
     outline: none;
@@ -12,7 +13,8 @@
 
 
   &:disabled,
-  &[disabled] {
+  &[disabled],
+  &.is-disabled {
     color: $color-disabled;
     &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
       color: $color-disabled;
@@ -76,7 +78,7 @@
 
 .c-radio,
 .c-checkbox {
-  // margin-bottom: $section-padding/2;
+  margin-bottom: .5em;
 
   input { display: none; }
   label {
@@ -139,9 +141,12 @@
 
   &.is-invalid {
     label {
-      &:before {
-        // background-image: radial-gradient($ui-color-lilac 11px, $ui-color-pink 12px);
-      }
+      color: $color-error;
+    }
+  }
+  &.is-disabled {
+    label {
+      color: $color-disabled;
     }
   }
 }
@@ -153,8 +158,14 @@
 }
 
 [class^="c-feedback"] {
+  position: absolute;
   font-size: .5em;
+  margin-top: -1em;
   text-transform: uppercase;
   color: $color-error;
   font-weight: bold;
+  display: none;
+  .is-invalid + & {
+    display: block;
+  }
 }

@@ -2,9 +2,14 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Index from '@/components/Index';
 import Layout from '@/components/Layout';
+import Colors from '@/components/Colors';
 import Text from '@/components/Text';
 import Inputs from '@/components/Inputs';
 import Buttons from '@/components/Buttons';
+import Loader from '@/components/Loader';
+import Cards from '@/components/Cards';
+import Icons from '@/components/Icons';
+import NotFound from '@/components/NotFound';
 
 Vue.use(Router);
 
@@ -22,12 +27,32 @@ export default new Router({
       component: Layout,
     },
     {
-      path: '/Buttons',
+      path: '/colors',
+      name: 'Colors',
+      component: Colors,
+    },
+    {
+      path: '/buttons',
       name: 'Buttons',
       component: Buttons,
     },
     {
-      path: '/Inputs',
+      path: '/icons',
+      name: 'Icons',
+      component: Icons,
+    },
+    {
+      path: '/cards',
+      name: 'Cards',
+      component: Cards,
+    },
+    {
+      path: '/loader',
+      name: 'Loader',
+      component: Loader,
+    },
+    {
+      path: '/inputs',
       name: 'Inputs',
       component: Inputs,
     },
@@ -35,6 +60,11 @@ export default new Router({
       path: '/text',
       name: 'Text',
       component: Text,
+    },
+    {
+      path: '/404',
+      name: 'NotFound',
+      component: NotFound,
     },
   ],
 });
