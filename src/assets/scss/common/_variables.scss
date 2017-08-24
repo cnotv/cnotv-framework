@@ -22,6 +22,8 @@ $letter-spacing-base:               .5px;
 $brand-primary:                     #333;
 $body-bg:                           #f1f1f1;
 $body-color:                        $brand-primary;
+$color-error:                       red;
+$color-disabled:                    lightgrey;
 
 $bg-link:                            #fff;
 $bg-link-hover:                      #dadada;
@@ -29,7 +31,7 @@ $modal-shadow-color:                 rgba(0,0,0,0.7);
 
 
 $website-border-size:				2px;
-$website-border:						$website-border-size solid $body-color;
+$website-border:						$website-border-size solid currentcolor;
 $menu-padding:							1.6rem;
 $menu-mobile-offset:				80px;
 

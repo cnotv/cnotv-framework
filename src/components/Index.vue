@@ -2,27 +2,22 @@
   <section class="c-section">
     <div class="c-container">
       <h1>Styleguide and framework for cnotv</h1>
-      <h3>Built with Vue, SCSS and KSS</h3>
-      <p>(Soon online with built automation using Travis)</p>
+      <h3>Built with Vue.js and SCSS</h3>
+      <a href="https://travis-ci.org/cnotv/cnotv-framework/"><img src="https://travis-ci.org/cnotv/cnotv-framework.svg?branch=master" alt="Framework built status"></a>
+      <p>This styleguide is an SPA generated using the Vue.js client (vue-cli) webpack template. Deploy automated through <a href="https://github.com/cnotv/cnotv-framework/">Git</a> and <a href="https://travis-ci.org/cnotv/cnotv-framework/">Travis CI</a>  via shared hosting Namecheap.</p>
+      <p>The purpose of this project is to collect in one place all the components required for all my applications. This will help to have a separation of concernes, stay DRY, integrate frontend tests, plus to assure it will be modular, extendible and flexible. It also will allow to demonstrate an actual setup for such case.</p>
+      <p>The first project where I'm going to use this framework will be my <a href="https://cnotv.xyz/">personal website</a>, built with Wordpress and distributed in analogue way. Check the <a href="https://cnotv.xyz/download">download</a> page for the actual status.</p>
+      <h5>To-do list:</h5>
+        <ul>
+          <li>List all the components and their template</li>
+          <li>Automate routing with a default setup</li>
+          <li>Pull a JSON schema, based on SCSS tree</li>
+          <li>Add description argument inside the SCSS, in KSS style</li>
+          <li>Include the possibility to reference Vue components for the markup</li>
+          <li>Add custom configuration with JSON file, as for KSS</li>
+        </ul>
     </div>
   </section>
 
   </div>
 </template>
-
-<script>
-export default {
-  name: 'hello',
-  data() {
-    return {
-    };
-  },
-};
-</script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.cnotv__section {
-  text-align: center;
-}
-</style>
