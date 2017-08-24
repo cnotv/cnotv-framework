@@ -83,6 +83,13 @@
       }
       li {
         font-weight: lighter;
+        ul {
+          display: none;
+        }
+        &:hover ul,
+        &.is-current ul {
+          display: block;
+        }
       }
     }
   }
