@@ -26,7 +26,13 @@
                   <li><a href="/layout#Container">Container</a></li>
                 </ul>
               </li>
-              <li><router-link to="/inputs">Inputs</router-link></li>
+              <li>
+                <router-link to="/inputs">Inputs</router-link>
+                <ul>
+                  <li><a href="/inputs#style">Style</a></li>
+                  <li><a href="/inputs#validation">Validation</a></li>
+                </ul>
+              </li>
               <li>
                 <router-link to="/buttons">Buttons</router-link>
                 <ul>
@@ -51,6 +57,7 @@
               <li>
                 <router-link to="/cards">Cards</router-link>
                 <ul>
+                  <li><a href="/cards#default">Default</a></li>
                   <li><a href="/cards#portfolio">Portfolio</a></li>
                   <li><a href="/cards#article">Article</a></li>
                 </ul>

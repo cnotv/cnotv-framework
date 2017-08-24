@@ -58,14 +58,14 @@
 
       <section class="c-section">
         <h2 id="Section">2. Section</h2>
-        <section class="c-section c-bg-lightgrey">
+        <section class="c-section c-bg-white">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ante eros, euismod ac facilisis ac, rhoncus non metus. Curabitur vehicula pretium sem, quis feugiat massa varius ac. Nam aliquam libero eu magna fringilla posuere. Phasellus elementum varius dui quis lacinia. Aenean aliquet lorem a erat maximus condimentum. Vivamus nulla massa, scelerisque quis dolor id, sodales molestie mi. Integer ac dignissim tellus. Nam luctus sed nibh non aliquet. Quisque ornare lacinia augue id convallis. Praesent cursus nibh eu leo vehicula pellentesque. 
         </section>
       </section>
 
       <section class="c-section">
         <h2 id="Container">3. Container</h2>
-        <div class="c-container c-bg-lightgrey">
+        <div class="c-container c-bg-white">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ante eros, euismod ac facilisis ac, rhoncus non metus. Curabitur vehicula pretium sem, quis feugiat massa varius ac. Nam aliquam libero eu magna fringilla posuere. Phasellus elementum varius dui quis lacinia. Aenean aliquet lorem a erat maximus condimentum. Vivamus nulla massa, scelerisque quis dolor id, sodales molestie mi. Integer ac dignissim tellus. Nam luctus sed nibh non aliquet. Quisque ornare lacinia augue id convallis. Praesent cursus nibh eu leo vehicula pellentesque. 
         </div>
       </section>

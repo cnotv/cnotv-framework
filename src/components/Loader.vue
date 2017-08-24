@@ -1,17 +1,17 @@
 <template>
   <section class="c-section">
     <div class="c-container">
-      <h1>404</h1>
-      <p>Go home, you are drunk</p>
+      <h1>Loader</h1>
+
+      <div class="c-loader">
+      </div>
     </div>
   </section>
-
-  </div>
 </template>
 
 <script>
 export default {
-  name: 'NotFound',
+  name: 'loader',
   data() {
     return {
     };
