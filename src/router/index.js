@@ -5,6 +5,7 @@ import Layout from '@/components/Layout';
 import Text from '@/components/Text';
 import Inputs from '@/components/Inputs';
 import Buttons from '@/components/Buttons';
+import NotFound from '@/components/NotFound';
 
 Vue.use(Router);
 
@@ -35,6 +36,11 @@ export default new Router({
       path: '/text',
       name: 'Text',
       component: Text,
+    },
+    {
+      path: '/404',
+      name: 'NotFound',
+      component: NotFound,
     },
   ],
 });
