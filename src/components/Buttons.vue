@@ -1,7 +1,7 @@
 <template>
   <section class="c-section">
     <div class="c-container">
-      <h2>Buttons</h2>
+      <h1>Buttons</h1>
 
       <div>
         <a href="#" class="c-btn-cta">Link Button</a>
