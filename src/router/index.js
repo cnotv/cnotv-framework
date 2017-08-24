@@ -62,7 +62,7 @@ export default new Router({
       component: Text,
     },
     {
-      path: '/404',
+      path: '*',
       name: 'NotFound',
       component: NotFound,
     },
