@@ -13,6 +13,7 @@
           <a href="http://isitmaintained.com/project/cnotv/cnotv-framework">
             <img src="http://isitmaintained.com/badge/open/cnotv/cnotv-framework.svg" alt="Percentage of issues still open" />
           </a>
+          <a href="https://github.com/cnotv/cnotv-framework"><img src="https://img.shields.io/github/stars/cnotv/cnotv-framework.svg?style=social&label=Star" alt="GitHub stars"></a>
         </span>
       </p>
 
