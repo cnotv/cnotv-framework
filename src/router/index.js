@@ -22,12 +22,12 @@ export default new Router({
       component: Layout,
     },
     {
-      path: '/Buttons',
+      path: '/buttons',
       name: 'Buttons',
       component: Buttons,
     },
     {
-      path: '/Inputs',
+      path: '/inputs',
       name: 'Inputs',
       component: Inputs,
     },

@@ -63,7 +63,7 @@
 
 <script>
 export default {
-  name: 'global',
+  name: 'inputs',
   data() {
     return {
     };

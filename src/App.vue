@@ -26,37 +26,37 @@
                   <li><a href="/layout#Container">Container</a></li>
                 </ul>
               </li>
-              <li><a href="/inputs">Inputs</a></li>
+              <li><router-link to="/inputs">Inputs</router-link></li>
               <li>
-                <a href="/buttons">Buttons</a>
+                <router-link to="/buttons">Buttons</router-link>
                 <ul>
                   <li><a href="/buttons#icons">Icons</a></li>
                 </ul>
               </li>
-              <li><a href="/backgrounds">Backgrounds</a></li>
-              <li><a href="/loader">Loader</a></li>
-              <li><a href="/animations">Animations</a></li>
+              <li><router-link to="/backgrounds">Backgrounds</router-link></li>
+              <li><router-link to="/loader">Loader</router-link></li>
+              <li><router-link to="/animations">Animations</router-link></li>
             </ul>
           </li>
           <li>
             <span>Objects</span>
             <ul>
               <li>
-                <a href="/nav">Nav</a>
+                <router-link to="/nav">Nav</router-link>
                 <ul>
                   <li><a href="/nav#H">Horizontal</a></li>
                   <li><a href="/nav#V">Vertical</a></li>
                 </ul>
               </li>
               <li>
-                <a href="/cards">Cards</a>
+                <router-link to="/cards">Cards</router-link>
                 <ul>
                   <li><a href="/cards#portfolio">Portfolio</a></li>
                   <li><a href="/cards#article">Article</a></li>
                 </ul>
               </li>
-              <li><a href="/searchbar">Search bar</a></li>
-              <li><a href="/modal">Modal</a></li>
+              <li><router-link to="/searchbar">Search bar</router-link></li>
+              <li><router-link to="/modal">Modal</router-link></li>
             </ul>
           </li>
         </ul>
