@@ -1,9 +1,7 @@
 // Common
-@import "common/variables";
-@import "common/bootstrap_vars";
-@import "common/mixins";
 @import "common/normalize";
-@import "common/reset";
+@import "common/mixins";
+@import "common/variables";
 @import "font-awesome/scss/font-awesome";
 @import "common/type";
 @import "common/global";
@@ -33,5 +31,4 @@
 @import "pages/portfolio";
 @import "pages/contact";
 @import "pages/posts";
-@import "pages/tinymce";
 

@@ -1,3 +1,19 @@
+@mixin buttonBg($color1, $color2){
+  &:hover {
+    background-image: linear-gradient(45deg, transparent 0%, transparent 95%,$color1 95%, $color1 100%);
+  }
+  &:active {
+    background-image: linear-gradient(45deg, transparent 0%, transparent 95%,$color2 95%, $color2 100%);
+  }
+  &.is-active {
+    background-image: linear-gradient(225deg, transparent 0%, transparent 95%,$color1 95%, $color1 100%);
+  }
+  &.is-active:hover {
+    background-image: linear-gradient(225deg, transparent 0%, transparent 95%,$color1 95%, $color1 100%),
+                      linear-gradient(45deg, transparent 0%, transparent 95%,$color1 95%, $color1 100%);
+  }
+}
+
 [class^="c-btn"] {
   border: $website-border;
   padding: .8em 1.8em;
@@ -38,37 +54,10 @@
     background-color: $body-color;
     border-color: $body-color;
     color: $body-bg;
-
-    &:hover {
-      background-image: linear-gradient(45deg, transparent 0%, transparent 95%,$body-bg 95%, $body-bg 100%);
-    }
-    &:active {
-      background-image: linear-gradient(45deg, transparent 0%, transparent 95%,darken($body-bg, 10%) 95%, darken($body-bg, 10%) 100%);
-    }
-
-    &.is-active {
-      background-image: linear-gradient(225deg, transparent 0%, transparent 95%,$body-bg 95%, $body-bg 100%);
-    }
-    &.is-active:hover {
-      background-image: linear-gradient(225deg, transparent 0%, transparent 95%,$body-bg 95%, $body-bg 100%),
-                        linear-gradient(45deg, transparent 0%, transparent 95%,$body-bg 95%, $body-bg 100%);
-    }
+    @include buttonBg($body-bg, $brand-secondary);
   }
 
   &-alt {
-    &:hover {
-      background-image: linear-gradient(45deg, transparent 0%, transparent 95%,$body-color 95%, $body-color 100%);
-    }
-    &:active {
-      background-image: linear-gradient(45deg, transparent 0%, transparent 95%,lighten($body-color, 10%) 95%, lighten($body-color, 10%) 100%);
-    }
-
-    &.is-active {
-      background-image: linear-gradient(225deg, transparent 0%, transparent 95%,$body-color 95%, $body-color 100%);
-    }
-    &.is-active:hover {
-      background-image: linear-gradient(225deg, transparent 0%, transparent 95%,$body-color 95%, $body-color 100%),
-                        linear-gradient(45deg, transparent 0%, transparent 95%,$body-color 95%, $body-color 100%);
-    }
+    @include buttonBg($brand-primary, $brand-secondary);
   }
 }

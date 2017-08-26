@@ -17,6 +17,16 @@ $viewports: (
   }
 }
 
+@function color($value) {
+  @if map-get($colors, $value) {
+    $color: map-get($colors, $value);
+    @return #{$color}
+  } @else {
+    @warn 'The color '$value' does not exist';
+    @break
+  }
+}
+
 @mixin grid-row($padding: true) {
   display: flex;
   flex-flow: row wrap;

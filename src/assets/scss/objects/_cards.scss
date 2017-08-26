@@ -9,7 +9,7 @@
   transition: box-shadow .2s;
 
   &:hover {
-    box-shadow: 0 5px 15px 5px rgba($brand-primary,.3);
+    box-shadow: $website-shadow;
   }
 
   &>*+* {
@@ -18,7 +18,6 @@
 
   section {
     padding: 1rem;
-    // background-color: $body-bg;
     
     &>*:last-child {
       margin-bottom: 0;
@@ -27,7 +26,6 @@
   }
   footer {
     padding: 1rem;
-    background-color: $bg-link;
     text-transform: uppercase;
     font-size: .8rem;
 
