@@ -1,43 +1,44 @@
 // Grid settings
-$enable-flex:                       true;
-$main-sm-columns:                   12;
-$sidebar-sm-columns:                4;
+$enable-flex:                         true;
+$main-sm-columns:                     12;
+$sidebar-sm-columns:                  4;
 
 
 // Layout
-$container-width:                   1400px;
-$grid-gutter-size:                  15px;
-$section-padding:                   2rem;
+$container-width:                     1400px;
+$grid-gutter-size:                    15px;
+$section-padding:                     2rem;
 
 
 // Fonts
-$font-family-base:                  'Roboto', -apple-system, system-ui, "Helvetica Neue", Arial, sans-serif;
-$headings-font-family:              'Rubik',  -apple-system, system-ui, "Helvetica Neue", Arial, sans-serif;
-$headings-font-weight:              700;
-$headings-margin-bottom:            1rem;
-$letter-spacing-base:               .5px;
+$font-family-base:                    'Roboto', -apple-system, system-ui, "Helvetica Neue", Arial, sans-serif;
+$headings-font-family:                'Rubik',  -apple-system, system-ui, "Helvetica Neue", Arial, sans-serif;
+$headings-font-weight:                700;
+$headings-margin-bottom:              1rem;
+$letter-spacing-base:                 .5px;
 
 
 // Colors
-$brand-primary:                     #333;
-$body-bg:                           #f1f1f1;
-$body-color:                        $brand-primary;
-$color-error:                       red;
-$color-disabled:                    lightgrey;
+$brand-primary:                       #333;
+$body-bg:                             #f1f1f1;
+$body-color:                          $brand-primary;
+$color-error:                         red;
+$color-disabled:                      lightgrey;
 
-$bg-link:                            #fff;
-$bg-link-hover:                      #dadada;
-$modal-shadow-color:                 rgba(0,0,0,0.7);
-
-
-$website-border-radius:     2px;
-$website-border-size:       2px;
-$website-border:						$website-border-size solid currentcolor;
-$menu-padding:							1.6rem;
-$menu-mobile-offset:				80px;
+$bg-link:                             #fff;
+$bg-link-hover:                       #dadada;
+$modal-shadow-color:                  rgba(0,0,0,0.7);
 
 
-$zindex-modal:							1050;
+$website-border-radius:               2px;
+$website-border-size:                 2px;
+$website-border:                      $website-border-size solid currentcolor;
+$website-border-secondary:            $website-border-size/2 solid currentcolor;
+$menu-padding:                        1.6rem;
+$menu-mobile-offset:                  80px;
+
+
+$zindex-modal:                        1050;
 
 // Font Awesome | see: http://fontawesome.io/get-started/
 // $fa-font-path:          '~font-awesome/fonts';

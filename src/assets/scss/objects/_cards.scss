@@ -5,11 +5,15 @@
   max-width: 100%;
   border-radius: $website-border-radius;
   overflow: hidden;
-  box-shadow: 0 1px 1px rgba($brand-primary,.3);
+  border: 1px solid currentcolor;
   transition: box-shadow .2s;
 
   &:hover {
     box-shadow: 0 5px 15px 5px rgba($brand-primary,.3);
+  }
+
+  &>*+* {
+    border-top: $website-border-secondary;
   }
 
   section {
