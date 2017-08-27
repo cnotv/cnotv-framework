@@ -70,15 +70,18 @@ pre {
     padding: .5rem 2rem;
   }
   @include media-bp(mobile) {
-    padding-bottom: 2rem;
+    padding: .5rem 1rem;
   }
 }
 
 table {
   border-collapse: collapse;
-  background-color: none;
   margin: $grid-gutter-size*2 0;
   border: $website-border;
+  @include media-bp(mobile) {
+    display: block;
+    overflow: scroll;
+  }
 }
 
 th {
@@ -90,6 +93,9 @@ th, td {
   padding: .5rem;
   border: $website-border-secondary;
 
+  @include media-bp(mobile) {
+    min-width: 240px;
+  }
 }
 
 tfoot {
