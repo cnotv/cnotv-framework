@@ -13,14 +13,15 @@ $section-padding:                     2rem;
 // Fonts
 $font-family-base:                    'Roboto', -apple-system, system-ui, "Helvetica Neue", Arial, sans-serif;
 $headings-font-family:                'Rubik',  -apple-system, system-ui, "Helvetica Neue", Arial, sans-serif;
-$headings-font-weight:                700;
-$font-size-base:                      1rem;
-$font-weight-base:                    normal;
-$line-height-base:                    1.5;
-$headings-margin-bottom:              1rem;
-$letter-spacing-base:                 .5px;
-$headings-line-height:                1.1 !default;
 
+$font-size-base:                      1rem !default;
+$font-weight-base:                    normal !default;
+$letter-spacing-base:                 .5px !default;
+$line-height-base:                    1.5 !default;
+
+$headings-margin-bottom:              1rem;
+$headings-font-weight:                700;
+$headings-line-height:                1.1 !default;
 $font-size-h1:                        2.5rem !default;
 $font-size-h2:                        2rem !default;
 $font-size-h3:                        1.75rem !default;
@@ -52,12 +53,12 @@ $modal-shadow-color:                  rgba(0,0,0,0.7);
 $website-shadow:                      4px 4px 0 0px color(black);
 $website-shadow-hover:                8px 8px 0 0px color(black);
 
-$website-border-radius:               2px;
-$website-border-size:                 2px;
+$website-border-radius:               2px !default;
+$website-border-size:                 2px !default;
 $website-border:                      $website-border-size solid currentcolor;
 $website-border-secondary:            $website-border-size/2 solid currentcolor;
-$menu-padding:                        1.6rem;
-$menu-mobile-offset:                  80px;
+$menu-padding:                        1.6rem !default;
+$menu-mobile-offset:                  80px !default;
 
 
 $zindex-modal:                        1050;

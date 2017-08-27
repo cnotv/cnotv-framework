@@ -1,8 +1,3 @@
-html {
-  -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
 body {
   font-family: $font-family-base;
   font-size: $font-size-base;
@@ -48,3 +43,63 @@ small,
 .small {
   font-size: .8em;
 }
+
+blockquote {
+  margin: $grid-gutter-size*2 0;
+  padding: .5rem 1rem;
+  font-size: 1.2em;
+  border-left: $website-border;
+  font-weight: lighter;
+  font-style: italic;
+  &>*:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+pre {
+  font-size: .8rem;
+  border: $website-border-secondary;
+  color: color(black);
+  max-width: 100%;
+  overflow: auto;
+  white-space: pre-wrap;
+  margin: $grid-gutter-size*2 0;
+
+  @include media-bp(desktop) {
+    padding: .5rem 2rem;
+  }
+  @include media-bp(mobile) {
+    padding-bottom: 2rem;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  background-color: none;
+  margin: $grid-gutter-size*2 0;
+  border: $website-border;
+}
+
+th {
+  text-align: left;
+  background-color: color(grey);
+}
+
+th, td {
+  padding: .5rem;
+  border: $website-border-secondary;
+
+}
+
+tfoot {
+  border-top: $website-border;
+  background-color: color(grey);
+}
+
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
