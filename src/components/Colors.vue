@@ -7,8 +7,8 @@
         <h2>1. Color list</h2>
         <div class="c-row">
 
-          <div class="c-col-1-5">
-            <div class="c-card">
+          <article class="c-col-1-5 c-card">
+            <div class="c-card__wrap">
               <section class="c-bg-l-grey">
                 <p>Light grey</p>
               </section>
@@ -16,10 +16,10 @@
                 <p>#333</p>
               </footer>
             </div>
-          </div>
+          </article>
 
-          <div class="c-col-1-5">
-            <div class="c-card">
+          <article class="c-col-1-5 c-card">
+            <div class="c-card__wrap">
               <section class="c-bg-black">
                 <p>Black</p>
               </section>
@@ -27,10 +27,10 @@
                 <p>#333</p>
               </footer>
             </div>
-          </div>
+          </article>
 
-          <div class="c-col-1-5">
-            <div class="c-card">
+          <article class="c-col-1-5 c-card">
+            <div class="c-card__wrap">
               <section class="c-bg-white">
                 <p>White</p>
               </section>
@@ -38,10 +38,10 @@
                 <p>#333</p>
               </footer>
             </div>
-          </div>
+          </article>
 
-          <div class="c-col-1-5">
-            <div class="c-card">
+          <article class="c-col-1-5 c-card">
+            <div class="c-card__wrap">
               <section class="c-bg-red">
                 <p>Red</p>
               </section>
@@ -49,10 +49,10 @@
                 <p>#333</p>
               </footer>
             </div>
-          </div>
+          </article>
 
-          <div class="c-col-1-5">
-            <div class="c-card">
+          <article class="c-col-1-5 c-card">
+            <div class="c-card__wrap">
               <section class="c-bg-grey">
                 <p>Grey</p>
               </section>
@@ -60,7 +60,7 @@
                 <p>#333</p>
               </footer>
             </div>
-          </div>
+          </article>
 
         </div>
       </section>
@@ -69,45 +69,45 @@
         <h2>2. Color use</h2>
         <div class="c-row">
 
-          <div class="c-col-1-5">
-            <div class="c-card">
+          <article class="c-col-1-5 c-card">
+            <div class="c-card__wrap">
               <section class="c-bg-l-grey">
                 <p>Background</p>
               </section>
             </div>
-          </div>
+          </article>
 
-          <div class="c-col-1-5">
-            <div class="c-card">
+          <article class="c-col-1-5 c-card">
+            <div class="c-card__wrap">
               <section class="c-bg-black">
                 <p>Text</p>
               </section>
             </div>
-          </div>
+          </article>
 
-          <div class="c-col-1-5">
-            <div class="c-card">
+          <article class="c-col-1-5 c-card">
+            <div class="c-card__wrap">
               <section class="c-bg-red">
                 <p>Error</p>
               </section>
             </div>
-          </div>
+          </article>
 
-          <div class="c-col-1-5">
-            <div class="c-card">
+          <article class="c-col-1-5 c-card">
+            <div class="c-card__wrap">
               <section class="c-bg-l-grey">
                 <p>Disabled</p>
               </section>
             </div>
-          </div>
+          </article>
 
-          <div class="c-col-1-5">
-            <div class="c-card">
+          <article class="c-col-1-5 c-card">
+            <div class="c-card__wrap">
               <section class="c-bg-grey">
                 <p>Link</p>
               </section>
             </div>
-          </div>
+          </article>
 
         </div>
       </section>

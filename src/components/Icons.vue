@@ -3,10 +3,11 @@
     <div class="c-container">
       <h1>Icons</h1>
       <p>Font awesome icons</p>
-      
+
       <div class="c-row">
-        <div class="c-col-1-6">
-          <div class="c-card">
+      
+        <article class="c-col-1-6 c-card">
+          <div class="c-card__wrap">
             <section class="c-bg-l-grey">
               <i class="fa fa-user"></i>
             </section>
@@ -14,7 +15,7 @@
               <p>.fa-user</p>
             </footer>
           </div>
-        </div>
+        </article>
 
       </div>
 

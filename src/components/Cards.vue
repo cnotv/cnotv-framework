@@ -7,8 +7,8 @@
         <h2 id="#default">1. Card default</h2>
         <div class="c-row">
 
-          <div class="c-col-1-3">
-            <div class="c-card">
+          <article class="c-col-1-3 c-card">
+            <div class="c-card__wrap">
               <section class="c-bg-l-grey">
                 <p>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. 
@@ -20,10 +20,10 @@
                 <p>Some footer content</p>
               </footer>
             </div>
-          </div>
+          </article>
 
-          <div class="c-col-1-3">
-            <div class="c-card">
+          <article class="c-col-1-3 c-card">
+            <div class="c-card__wrap">
               <section class="c-bg-l-grey">
                 <p>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua.
@@ -32,10 +32,10 @@
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </section>
             </div>
-          </div>
+          </article>
 
-          <div class="c-col-1-3">
-            <div class="c-card">
+          <article class="c-col-1-3 c-card">
+            <div class="c-card__wrap">
               <section class="c-bg-l-grey">
                 <p>Card with a button</p>
               </section>
@@ -43,7 +43,7 @@
                 <div class="c-btn-cta">Go next</div>
               </footer>
             </div>
-          </div>
+          </article>
 
         </div>
       </section>

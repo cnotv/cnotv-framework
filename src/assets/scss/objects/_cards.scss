@@ -1,19 +1,25 @@
 .c-card {
   position: relative;
-  display: flex;
-  flex-direction: column;
   max-width: 100%;
   border-radius: $website-border-radius;
-  overflow: hidden;
-  border: 1px solid currentcolor;
   transition: box-shadow .2s;
 
+  &+& {
+    @include media-bp(mobile) {
+      margin-top: $section-padding;
+    }
+  }
+
+  &__wrap {
+    border: 1px solid currentcolor;
+    display: flex;
+    flex-direction: column;
   &:hover {
     box-shadow: $website-shadow;
   }
-
-  &>*+* {
-    border-top: $website-border-secondary;
+    &>*+* {
+      border-top: $website-border-secondary;
+    }
   }
 
   section {
