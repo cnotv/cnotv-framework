@@ -2,7 +2,6 @@
   position: relative;
   max-width: 100%;
   border-radius: $website-border-radius;
-  transition: box-shadow .2s;
 
   &+& {
     @include media-bp(mobile) {
@@ -14,9 +13,11 @@
     border: 1px solid currentcolor;
     display: flex;
     flex-direction: column;
-  &:hover {
+  transition: box-shadow .2s;
     box-shadow: $website-shadow;
-  }
+    &:hover {
+      box-shadow: $website-shadow-hover;
+    }
     &>*+* {
       border-top: $website-border-secondary;
     }
