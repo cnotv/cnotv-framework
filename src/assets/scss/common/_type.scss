@@ -65,6 +65,7 @@ pre {
   overflow: auto;
   white-space: pre-wrap;
   margin: $grid-gutter-size*2 0;
+  box-shadow: $website-shadow;
 
   @include media-bp(desktop) {
     padding: .5rem 2rem;
@@ -78,6 +79,8 @@ table {
   border-collapse: collapse;
   margin: $grid-gutter-size*2 0;
   border: $website-border;
+  box-shadow: $website-shadow;
+  
   @include media-bp(mobile) {
     display: block;
     overflow: scroll;
