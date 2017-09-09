@@ -27,6 +27,16 @@ $viewports: (
   }
 }
 
+@function zindex($value) {
+  @if map-get($zindex, $value) {
+    $zindex: map-get($zindex, $value);
+    @return #{$zindex}
+  } @else {
+    @warn 'The z-index '$value' does not exist';
+    @break
+  }
+}
+
 @mixin grid-row($padding: true) {
   display: flex;
   flex-flow: row wrap;

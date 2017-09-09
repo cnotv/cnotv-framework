@@ -39,6 +39,10 @@ $colors: (
   grey-l:                             "lightgrey",
 );
 
+$zindex: (
+  dropdown:                           '10',
+);
+
 $brand-primary:                       color(black);
 $brand-secondary:                     color(grey);
 $body-bg:                             color(lightgrey);
@@ -57,7 +61,7 @@ $website-border-radius:               2px !default;
 $website-border-size:                 2px !default;
 $website-border:                      $website-border-size solid currentcolor;
 $website-border-secondary:            $website-border-size/2 solid currentcolor;
-$menu-padding:                        1.6rem !default;
+$menu-padding:                        1.2rem !default;
 $menu-mobile-offset:                  80px !default;
 
 

@@ -9,6 +9,7 @@ import Buttons from '@/components/Buttons';
 import Loader from '@/components/Loader';
 import Cards from '@/components/Cards';
 import Icons from '@/components/Icons';
+import Nav from '@/components/Nav';
 import NotFound from '@/components/NotFound';
 
 Vue.use(Router);
@@ -35,6 +36,11 @@ export default new Router({
       path: '/buttons',
       name: 'Buttons',
       component: Buttons,
+    },
+    {
+      path: '/nav',
+      name: 'Nav',
+      component: Nav,
     },
     {
       path: '/icons',

@@ -1,4 +1,85 @@
-.c-nav {
+.o-nav {
+  &-h {
+    position: relative;
+    display: flex;
+    font-size: 0.8rem;
+    font-family: $headings-font-family;
+    border-top: $website-border;
+    border-bottom: $website-border;
+    text-transform: uppercase;
+    justify-content: space-between;
+    @include media-bp(phone) {
+      flex-direction: column;
+    }
+
+    a, span, button {
+      display: block;
+
+      @include media-bp(tablet-min) {
+        padding: $menu-padding;
+      }
+      @include media-bp(phone) {
+        line-height: 1;
+        padding: $menu-padding/2;
+      }
+      &:hover {
+        text-decoration: none;
+        cursor: pointer;
+        @include media-bp(tablet-min) {
+          background-color: $bg-link-hover;
+        }
+      }
+    }
+
+    i {
+      font-size: 1rem;
+    }
+
+    ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      background-color: $body-bg;
+      @include media-bp(phone) {
+        flex-direction: column;
+      }
+    }
+
+    li {
+      position: relative;
+      list-style: none;
+      @include media-bp(phone) {
+        border-top: $website-border-secondary;
+      }
+
+      ul {
+        z-index: zindex(dropdown);
+        @include media-bp(tablet-min) {
+          display: none;
+          position: absolute;
+          white-space: nowrap;
+
+          border: $website-border-secondary;
+          box-shadow: $website-shadow-hover;
+        }
+        ul {
+          left: 100%;
+          top: -1px;
+        }
+      }
+      &:hover>ul {
+        display: block;
+      }
+    }
+
+    &__right {
+      display: flex;
+      @include media-bp(phone) {
+        border-top: $website-border-secondary;
+      }
+    }
+  }
+
   &-v {
     padding: 0 4vw;
 
@@ -9,13 +90,14 @@
       background-color: white;
       height: 100vh;
       width: 100vw;
-      z-index: 1;
-      transition: left .2s;
+      z-index: zindex(dropdown);
+      transition: left .2s, z-index .2s 0s;
       padding-top: 2rem;
 
       &:active,
       &:focus {
         left: 0;
+        z-index: 999;
       }
     }
     
@@ -55,7 +137,7 @@
 
       a {
         position: relative;
-        z-index: 1;
+        z-index: 0;
         &:after {
           content: "";
           position: absolute;
@@ -66,6 +148,7 @@
           z-index: -1;
         }
         &:hover,
+        &:focus,
         &.router-link-active {
           &:after {
             background-color: $bg-link-hover;
@@ -90,7 +173,8 @@
         }
       }
     }
-    .router-link-active + ul {
+    .router-link-active + ul,
+    a:focus + ul {
       display: block;
     }
 
