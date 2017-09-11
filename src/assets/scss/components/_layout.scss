@@ -1,10 +1,16 @@
-.c-container {
+[class^="c-container"] {
   position: relative;
   margin: 0 auto;
-  max-width: $container-width;
   width: 100%;
   padding-left: $grid-gutter-size;
   padding-right: $grid-gutter-size;
+
+}
+.c-container {
+  max-width: $container-width;
+}
+.c-container-s {
+  max-width: $container-s-width;
 }
 
 .c-section {

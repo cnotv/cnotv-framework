@@ -22,8 +22,7 @@
                 <router-link to="/layout">Layout</router-link>
                 <ul>
                   <li><a href="/layout#Grid">Grid</a></li>
-                  <li><a href="/layout#Section">Section</a></li>
-                  <li><a href="/layout#Container">Container</a></li>
+                  <li><a href="/layout#Global">Global</a></li>
                 </ul>
               </li>
               <li>

@@ -57,16 +57,28 @@
       </section>
 
       <section class="c-section">
-        <h2 id="Section">2. Section</h2>
-        <section class="c-section c-bg-white">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ante eros, euismod ac facilisis ac, rhoncus non metus. Curabitur vehicula pretium sem, quis feugiat massa varius ac. Nam aliquam libero eu magna fringilla posuere. Phasellus elementum varius dui quis lacinia. Aenean aliquet lorem a erat maximus condimentum. Vivamus nulla massa, scelerisque quis dolor id, sodales molestie mi. Integer ac dignissim tellus. Nam luctus sed nibh non aliquet. Quisque ornare lacinia augue id convallis. Praesent cursus nibh eu leo vehicula pellentesque. 
-        </section>
-      </section>
-
-      <section class="c-section">
-        <h2 id="Container">3. Container</h2>
-        <div class="c-container c-bg-white">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ante eros, euismod ac facilisis ac, rhoncus non metus. Curabitur vehicula pretium sem, quis feugiat massa varius ac. Nam aliquam libero eu magna fringilla posuere. Phasellus elementum varius dui quis lacinia. Aenean aliquet lorem a erat maximus condimentum. Vivamus nulla massa, scelerisque quis dolor id, sodales molestie mi. Integer ac dignissim tellus. Nam luctus sed nibh non aliquet. Quisque ornare lacinia augue id convallis. Praesent cursus nibh eu leo vehicula pellentesque. 
+        <h2 id="Global">2. Global</h2>
+        <div class="c-section">
+          <div class="c-container c-bg-white">
+            <h5>.c-container</h5>
+            <div class="c-section">
+              <h5>.c-section</h5>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ante eros, euismod ac facilisis ac, rhoncus non metus. Curabitur vehicula pretium sem, quis feugiat massa varius ac. Nam aliquam libero eu magna fringilla posuere. Phasellus elementum varius dui quis lacinia. Aenean aliquet lorem a erat maximus condimentum. Vivamus nulla massa, scelerisque quis dolor id, sodales molestie mi. Integer ac dignissim tellus. Nam luctus sed nibh non aliquet. Quisque ornare lacinia augue id convallis. Praesent cursus nibh eu leo vehicula pellentesque. 
+            </div>
+            <div class="c-section">
+              <h5>.c-section</h5>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ante eros, euismod ac facilisis ac, rhoncus non metus. Curabitur vehicula pretium sem, quis feugiat massa varius ac. Nam aliquam libero eu magna fringilla posuere. Phasellus elementum varius dui quis lacinia. Aenean aliquet lorem a erat maximus condimentum. Vivamus nulla massa, scelerisque quis dolor id, sodales molestie mi. Integer ac dignissim tellus. Nam luctus sed nibh non aliquet. Quisque ornare lacinia augue id convallis. Praesent cursus nibh eu leo vehicula pellentesque. 
+            </div>
+          </div>
+        </div>
+        <div class="c-section">
+          <div class="c-container-s c-bg-white">
+            <h5>.c-container-s</h5>
+            <div class="c-section">
+              <h5>.c-section</h5>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ante eros, euismod ac facilisis ac, rhoncus non metus. Curabitur vehicula pretium sem, quis feugiat massa varius ac. Nam aliquam libero eu magna fringilla posuere. Phasellus elementum varius dui quis lacinia. Aenean aliquet lorem a erat maximus condimentum. Vivamus nulla massa, scelerisque quis dolor id, sodales molestie mi. Integer ac dignissim tellus. Nam luctus sed nibh non aliquet. Quisque ornare lacinia augue id convallis. Praesent cursus nibh eu leo vehicula pellentesque. 
+            </div>
+          </div>
         </div>
       </section>
     </div>
