@@ -53,6 +53,7 @@ $color-disabled:                      color(grey-l);
 
 $bg-nav:                              color(white);
 $bg-dropdown:                         color(white);
+$bg-card:                             color(white);
 $bg-link:                             color(white);
 $bg-link-hover:                       color(grey);
 $modal-shadow-color:                  rgba(0,0,0,0.7);
@@ -62,8 +63,8 @@ $website-shadow-hover:                8px 8px 0 0px color(black);
 
 $website-border-radius:               2px !default;
 $website-border-size:                 2px !default;
-$website-border:                      $website-border-size solid currentcolor;
-$website-border-secondary:            $website-border-size/2 solid currentcolor;
+$website-border:                      $website-border-size solid color(black);
+$website-border-secondary:            $website-border-size/2 solid color(black);
 $menu-padding:                        1.2rem !default;
 $menu-mobile-offset:                  80px !default;
 

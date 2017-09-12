@@ -5,7 +5,10 @@ article {
     height: auto;
   }
 
-  a {
-    @include link_style;
+  section,
+  footer {
+    a {
+      @include link_style;
+    }
   }
 }
