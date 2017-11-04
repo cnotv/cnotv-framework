@@ -69,10 +69,10 @@
             </div>
 
             <div class="c-col-1-6">
-              <button id="toggleStatus" class="c-btn-cta" @click="toggleError">Toggle error</button>
+              <button class="c-btn-cta" v-bind:class="{ 'is-active': isInvalidActive }" @click="toggleInvalid">Toggle error</button>
               <br>
               <br>
-              <button id="toggleStatus" class="c-btn-cta" @click="toggleDisabled">Toggle disabled</button>
+              <button class="c-btn-cta" v-bind:class="{ 'is-active': isDisabledActive }" @click="toggleDisabled">Toggle disabled</button>
             </div>
           </div>
         </form>
@@ -136,16 +136,20 @@ export default {
     return {
       isInvalid: false,
       isDisabled: false,
+      isInvalidActive: false,
+      isDisabledActive: false,
     };
   },
   methods: {
     onSubmit: function checkValidation() {
     },
-    toggleError() {
+    toggleInvalid() {
       this.isInvalid = !this.isInvalid;
+      this.isInvalidActive = !this.isInvalidActive;
     },
     toggleDisabled() {
       this.isDisabled = !this.isDisabled;
+      this.isDisabledActive = !this.isDisabledActive;
     },
   },
 };

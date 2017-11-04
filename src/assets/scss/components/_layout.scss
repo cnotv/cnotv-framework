@@ -1,11 +1,21 @@
-
-.c-container {
+[class^="c-container"] {
   position: relative;
   margin: 0 auto;
-  max-width: $container-width;
   width: 100%;
-  padding-left: $grid-gutter-size;
-  padding-right: $grid-gutter-size;
+  @include media-bp(desktop) {
+    padding-left: $grid-gutter-size*2;
+    padding-right: $grid-gutter-size*2;
+  }
+  @include media-bp(mobile) {
+    padding-left: $grid-gutter-size;
+    padding-right: $grid-gutter-size;
+  }
+}
+.c-container {
+  max-width: $container-width;
+}
+.c-container-s {
+  max-width: $container-s-width;
 }
 
 .c-section {
@@ -18,17 +28,20 @@
 }
 
 .c-main {
-  @include grid-col(3/4);
+  @include grid-col(3/4, $padding: false);
   overflow-y: scroll;
   height: 100vh;
 }
 .c-sidebar {
-  @include grid-col(1/4);
+  @include grid-col(1/4, $padding: false);
   background-color: $bg-link;
   overflow-y: scroll;
 
   @include media-bp(desktop) {
     height: 100vh;
+  }
+  @include media-bp(mobile) {
+    height: 0;
   }
 }
 

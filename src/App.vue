@@ -1,9 +1,9 @@
 <template>
   <div class="c-row--edge">
     <aside class="c-sidebar">
-      <nav class="c-nav-v" tabindex="-1">
-        <img src="./assets/logo.svg" class="c-logo c-nav-v__toggle" alt="cnotv" itemprop="logo">
-        <button class="c-nav-v__close"><i class="fa fa-close"></i></button>
+      <nav class="o-nav-v" tabindex="-1">
+        <img src="./assets/logo.svg" class="c-logo o-nav-v__toggle" alt="cnotv" itemprop="logo">
+        <button class="o-nav-v__close"><i class="fa fa-close"></i></button>
         <router-link to="/">Introduction</router-link>
         <ul>
           <li>
@@ -22,8 +22,7 @@
                 <router-link to="/layout">Layout</router-link>
                 <ul>
                   <li><a href="/layout#Grid">Grid</a></li>
-                  <li><a href="/layout#Section">Section</a></li>
-                  <li><a href="/layout#Container">Container</a></li>
+                  <li><a href="/layout#Global">Global</a></li>
                 </ul>
               </li>
               <li>

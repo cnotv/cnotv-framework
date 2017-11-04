@@ -9,6 +9,8 @@ import Buttons from '@/components/Buttons';
 import Loader from '@/components/Loader';
 import Cards from '@/components/Cards';
 import Icons from '@/components/Icons';
+import Nav from '@/components/Nav';
+import Modal from '@/components/Modal';
 import NotFound from '@/components/NotFound';
 
 Vue.use(Router);
@@ -37,6 +39,16 @@ export default new Router({
       component: Buttons,
     },
     {
+      path: '/modal',
+      name: 'Modal',
+      component: Modal,
+    },
+    {
+      path: '/nav',
+      name: 'Nav',
+      component: Nav,
+    },
+    {
       path: '/icons',
       name: 'Icons',
       component: Icons,
@@ -62,7 +74,7 @@ export default new Router({
       component: Text,
     },
     {
-      path: '/404',
+      path: '*',
       name: 'NotFound',
       component: NotFound,
     },
